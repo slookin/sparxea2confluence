@@ -1,0 +1,41 @@
+<%! from time import strftime as time %>
+<ac:structured-macro ac:name="info" ac:schema-version="1" ac:macro-id="6155a5ea-b8ec-453e-8dc2-e388f3dbc4b3"><ac:rich-text-body>
+    <p>This page was generated at ${'%H:%M:%S %z  %d/%m/%Y' | time}. Please don't edit this page, your changes will be lost in next page publishing. </p></ac:rich-text-body></ac:structured-macro>
+<h1>${diagram['title']}</h1>
+<ac:image><ri:attachment ri:filename="${diagram['image']}" /></ac:image>
+<h3>Description</h3>
+<p>${diagram['notes']}</p>
+
+<h3>Components</h3>
+
+<table class="relative-table wrapped" style="margin-left: 2.0px;">
+<tbody>
+<tr><th>Component name</th>
+    <th>repository</th>
+    <th>Description</th>
+    <th>Wiki</th></tr>
+
+% for comp in diagram["components"]:
+<tr><td>${comp["title"]}</td><td>${comp["git repository"]}</td><td>${comp["description"]}</td><td><a href="${comp["wiki"]}">wiki</a></td></tr>
+% endfor
+
+
+</tbody></table>
+
+<h3>Services</h3>
+
+<table class="relative-table wrapped" style="margin-left: 2.0px;">
+<tbody>
+<tr><th>Component name</th>
+    <th>Service name</th>
+    <th>Description</th>
+</tr>
+
+% for comp in diagram["components"]:
+  % for service in comp["provided-services"]:
+    <tr><td>${comp["title"]}</td><td>${service["reference"]}</td><td>${service["description"]}</td>
+    </tr>
+  % endfor
+% endfor
+
+</tbody></table>

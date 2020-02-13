@@ -1,0 +1,21 @@
+[
+  {
+    "type": "diagram_list",
+    "page_title": "Logic for creating LLC (1..40+) SelfExpansion",
+    "diagram_name": [
+      "0. Creating LLCs",
+      "1. New Name for GF-AP",
+      "2. New VzK UMS Raster",
+      "3. Look for free port on NVt Splitter or for Direct HK Fiber",
+      "4. Look for New Splitter in NVt or look for free Direct HK Fiber",
+      "5. Determine GF-AP Splitter Port"
+    ],
+    "version": "4.4",
+    "model_name": "PON Inventory",
+    "confluence": {
+      "page_name": "[ARCH] Create LLC",
+      "space": "DGHB",
+      "template_name": "diagram_list.html"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {"type":"diagram",
+  "diagram_name":"Component view",
+  "model_name":"CustomModel",
+    "confluence": {
+      "page_name":"[EA] Diagram",
+      "space":"DGHB",
+      "template_name":"diagram.html"
+      }
+    },
+
+
+  {"type":"diagram_with_components",
+  "diagram_name":"Component view",
+  "model_name":"CustomModel",
+    "confluence": {
+      "page_name":"[EA] Component view",
+      "space":"DGHB",
+      "template_name":"components_v3_view.html"
+      }
+    }
+]

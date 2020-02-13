@@ -1,0 +1,6 @@
+Mako==1.1.1
+MarkupSafe==1.1.0
+pywin32
+requests
+six
+urllib3

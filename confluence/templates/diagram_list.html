@@ -1,0 +1,16 @@
+<%! from time import strftime as time %>
+<ac:structured-macro ac:name="info" ac:schema-version="1" ac:macro-id="6155a5ea-b8ec-453e-8dc2-e388f3dbc4b3"><ac:rich-text-body>
+    <p>This page was generated at ${'%H:%M:%S %z  %d/%m/%Y' | time}. Please don't edit this page, your changes will be lost in next page publishing. </p></ac:rich-text-body></ac:structured-macro>
+<h1>${page_title}</h1>
+<ac:structured-macro ac:name="toc" ac:schema-version="1" ac:macro-id="e9bf6391-c89e-40b6-a9e5-0a4d51607f96">
+  <ac:parameter ac:name="maxLevel">2</ac:parameter>
+  <ac:parameter ac:name="minLevel">2</ac:parameter>
+</ac:structured-macro>
+
+% for diagram in diagram_list:
+  <h2>${diagram['title']}</h2>
+  <ac:image><ri:attachment ri:filename="${diagram['image']}" /></ac:image>
+  <h3>Description</h3>
+  <p>${diagram['notes']}</p>
+% endfor
+
