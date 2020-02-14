@@ -16,12 +16,15 @@ automatization tool, allow to export diagrams from Sparx Enterprise Architect as
 * list of dict
 * dict structure
 
-    "type": one of ["diagram", "diagram_list", "diagram_with_components"]
+```json
+"type": one of ["diagram", "diagram_list", "diagram_with_components"]
       "diagram_name": name of diagram in Sparx EA model ,
       "model_name":  model name in Sparx,
+	  "version" : optional, version of diagram 
       "confluence": {
          "page_name": Page name,
          "space": confluence space,
          "template_name": page template
         }
     },
+```
