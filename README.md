@@ -1,7 +1,9 @@
 # sparxea2confluence
-automatization tool, allow to export diagrams from Sparx Enterprise Architect as Confluence
+automatization tool, allow to export diagrams from Sparx Enterprise Architect to Confluence
 
 ## configuration
+### production / test enviroment
+Use command line attribute "-prod" for enable production configuration
 ### documentation.cfg
 - FILE_PATH - place for temporary files
 - MODEL - full path to EA model (eap or feap or ODBC or HTTP link)
@@ -17,6 +19,7 @@ automatization tool, allow to export diagrams from Sparx Enterprise Architect as
 * dict structure
 
     "type": one of ["diagram", "diagram_list", "diagram_with_components"]
+      "page_title": new title (h1) for page,
       "diagram_name": name of diagram in Sparx EA model ,
       "model_name":  model name in Sparx,
       "confluence": {

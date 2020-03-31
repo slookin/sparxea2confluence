@@ -7,6 +7,7 @@ import json
 import re
 from mako.template import Template
 import logging
+import argparse
 
 logger = logging.getLogger("documentation")
 logger.setLevel(logging.DEBUG)
@@ -23,7 +24,14 @@ logger.addHandler(ch)
 c = configparser.ConfigParser()
 c.read('documentation.cfg')
 
-if os.environ['USERNAME'] == "slukin":
+
+parser = argparse.ArgumentParser(prog='Sparx2Confluence', description="Publish diagrams from Sparx EA to Confluence")
+#parser.add_argument('prod', metavar='Production marker', type=bool, nargs='-', help='should production configuration used', default=False)
+parser.add_argument('-prod', action="store_true")
+
+args = parser.parse_args()
+
+if args.prod:
     config = c["PROD"]
 else:
     config = c["TEST"]
