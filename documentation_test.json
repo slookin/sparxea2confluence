@@ -4,7 +4,7 @@
   "model_name":"CustomModel",
     "confluence": {
       "page_name":"[EA] Diagram",
-      "space":"DGHB",
+      "space":"TEST",
       "template_name":"diagram.html"
       }
     },
@@ -15,8 +15,19 @@
   "model_name":"CustomModel",
     "confluence": {
       "page_name":"[EA] Component view",
-      "space":"DGHB",
+      "space":"TEST",
       "template_name":"components_v3_view.html"
+      }
+    },
+
+    {"type":"diagram_list",
+     "page_title":"Dynamic View",
+     "diagram_name": ["Authentication", "Making Order"],
+     "model_name":"CustomModel",
+     "confluence": {
+      "page_name":"[EA] Diagramm list",
+      "space":"TEST",
+      "template_name":"diagram_list.html"
       }
     }
 ]
