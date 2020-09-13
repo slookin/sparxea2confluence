@@ -47,7 +47,7 @@ TEMPLATE_PATH = config["TEMPLATE_PATH"]
 
 
 
-eaRep = open_repository(MODEL, "readonly", "readonly")
+(eaApp, eaRep) = open_repository(MODEL, "readonly", "readonly")
 logger.debug("eap opened")
 models = eaRep.Models
 

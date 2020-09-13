@@ -63,7 +63,7 @@ def open_repository(path, login, password):
     else:
         #eaRep.ChangeLoginUser(login,password)
         eaRep.OpenFile(path)
-    return eaRep
+    return eaApp, eaRep
 
 def single_search(eaRep, term, search_type):
     search_res = eaRep.GetElementsByQuery(search_type, term)
