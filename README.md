@@ -33,6 +33,6 @@ Use command line attribute "-prod" for enable production configuration
 
 
 ### Compatibilty
-It was tested with Sparx EA 13 and Sparx EA 13.5.
+It was tested with Sparx EA 13.0, Sparx EA 13.5 and Sparx EA 15.0
 
 Sparx EA 13.5 has a small problem with authentication in repositories.
